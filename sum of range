@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int min=s.nextInt();
+        int max=s.nextInt();
+        int i=min;
+        int sum=0;
+        while(i<=max){
+            sum=sum+i;
+            i++;
+        }
+        System.out.println(sum);
+    }
+}
