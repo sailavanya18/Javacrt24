@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+        int wb,noa,noc;
+        wb=s.nextInt();
+        noa=s.nextInt();
+        noc=s.nextInt();
+        if(wb>(noa*75+noc*30)){
+            System.out.println("Boat is stable");
+        }
+           else{
+               System.out.println("Boat will drown");
+           }
+    }
+}
