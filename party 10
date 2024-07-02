@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int in[]=new int[n];
+        int out[]=new int[n];
+        for(int i=0;i<n;i++){
+            in[i]=s.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            out[i]=s.nextInt();
+        }
+        int nog=0,t=0;
+        for(int i=0;i<n;i++){
+            nog+=in[i]-out[i];
+            if(nog>t){
+                t=nog;
+            }
+        }
+        System.out.println(t);
+        
+    }
+}
