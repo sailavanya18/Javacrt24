@@ -1,0 +1,22 @@
+import java.util.*;
+class Employee{
+String ename;
+double salary;
+void get(String x,double y){
+ename=x;
+salary=y;
+}
+void show(){
+System.out.println(ename+" "+salary);
+}
+}
+class EDetails{
+public static void main(String[] args){
+Employee e1=new Employee();
+e1.get("lava",20000.00);
+Employee e2=new Employee();
+e2.get("ananya",40000.00);
+e1.show();
+e2.show();
+}
+}
