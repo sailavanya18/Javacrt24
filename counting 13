@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String str=s.nextLine();
+        str=str.toLowerCase();
+        int vowels=0,c=0,w=0,d=0,sym=0;
+        for(int i=0;i<str.length();i++){
+            char ch=str.charAt(i);
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                vowels++;
+            }
+            else if(ch>='a'&&ch<='z'){
+                c++;
+            }
+            else if(ch>='0'&&ch<='9'){
+                d++;
+            }
+            else if(ch==' '){
+                w++;
+            }
+            else{
+                sym++;
+            }
+        }
+        System.out.println("Vowels:"+vowels);
+        System.out.println("Consonants:"+c);
+        System.out.println("White Spaces:"+w);
+        System.out.println("Digits:"+d);
+        System.out.println("Symbols:"+sym);
+    }
+}
